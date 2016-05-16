@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomBarItemOne"
+        android:icon="@drawable/ic_settings_cell_black_18dp"
+        android:title="本地" />
+
+    <item
+        android:id="@+id/bottomBarItem2"
+        android:icon="@drawable/ic_info_outline_black_18dp"
+        android:title="推荐" />
+
+
+    <item
+        android:id="@+id/bottomBarItem3"
+        android:icon="@drawable/ic_remove_red_eye_black_18dp"
+        android:title="新闻" />
+
+</menu>

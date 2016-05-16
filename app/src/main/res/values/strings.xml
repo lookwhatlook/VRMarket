@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">冰火VR</string>
+
+    <string name="action_about">关于</string>
+    <string name="title_activity_news">新闻详情</string>
+    <string name="title_activity_about">关于</string>
+    <string name="text_about">Powered by 厦门创客网 \n www.xmmaker.com \n Copyright © 2014-2016</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

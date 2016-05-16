@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_item_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="2dp"
+    app:contentPaddingBottom="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/iv_app_summary_photo"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:layout_margin="4dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon" />
+
+            <TextView
+                android:id="@+id/tv_app_summary_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_app_summary_photo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/iv_app_summary_photo"
+                android:singleLine="true"
+                android:text="Google Cardboard"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_app_summary_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_app_summary_photo"
+                android:layout_alignLeft="@+id/tv_app_summary_title"
+                android:layout_below="@+id/tv_app_summary_title"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="大小：33M"
+                android:textSize="15sp" />
+
+            <com.xmmaker.vrmarket.test.DashedLineView
+                android:id="@+id/dotted_line"
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:layout_below="@+id/iv_app_summary_photo"></com.xmmaker.vrmarket.test.DashedLineView>
+        </RelativeLayout>
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_app_summary_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_top"
+            android:layout_marginTop="2dp"
+            expandableTextView:animDuration="200"
+            expandableTextView:maxCollapsedLines="4">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:background="@android:color/transparent"
+                android:padding="8dp" />
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
