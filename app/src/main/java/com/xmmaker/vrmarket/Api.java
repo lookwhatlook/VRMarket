@@ -30,4 +30,8 @@ public class Api {
 
 //    public static final String XM_ALL_APPS = "http://www.xmmaker.com/App/demo.php";
     public static final String XM_ALL_APPS = "http://www.xmmaker.com/index.php?s=/VRsource/index.html";
+
+    public static final String VR_NEWS_913 = "http://m.913vr.com/news/";
+
+
 }

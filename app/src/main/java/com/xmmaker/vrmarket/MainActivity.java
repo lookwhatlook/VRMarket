@@ -25,6 +25,7 @@ import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnMenuTabClickListener;
 import com.xmmaker.vrmarket.fragments.LocalAppFragment;
 import com.xmmaker.vrmarket.fragments.NewsFragment2;
+import com.xmmaker.vrmarket.fragments.NewsOnlineFragment;
 import com.xmmaker.vrmarket.fragments.OnlineAppFragment2;
 
 import java.io.File;
@@ -203,7 +204,7 @@ public class MainActivity extends AppCompatActivity implements LocalAppFragment.
                     toolbar.setLogo(R.drawable.ic_remove_red_eye_white_24dp);
                     Fragment fragment = fragmentManager.findFragmentByTag("tag3");
                     if (fragment == null) {
-                        Fragment newsFragment = new NewsFragment2();
+                        Fragment newsFragment = new NewsOnlineFragment();
                         //将新Fragment add并将当前显示的Fragment hide
                         fragmentManager.beginTransaction().hide(currentFragment).add(R.id.fragment_container, newsFragment, "tag3").commit();
                         currentFragment = newsFragment;

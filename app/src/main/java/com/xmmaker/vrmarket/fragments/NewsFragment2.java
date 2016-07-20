@@ -363,7 +363,7 @@ public class NewsFragment2 extends Fragment {
 
     //recyclerview点击事件
     private void setClick() {
-        mAdapter.setOnItemClickListener(new NewsListAdapter.OnRecyclerViewItemClickListener() {
+            mAdapter.setOnItemClickListener(new NewsListAdapter.OnRecyclerViewItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
                 if (dataList.size() != 0) {
